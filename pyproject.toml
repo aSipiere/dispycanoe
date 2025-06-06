@@ -10,9 +10,15 @@ dependencies = [
 
 [dependency-groups]
 dev = [
+    "poethepoet>=0.34.0",
     "pytest>=8.4.0",
+    "requests>=2.32.3",
     "ruff>=0.11.13",
 ]
 
 [tool.setuptools]
 packages = ["dispycanoe"]
+
+[tool.poe.tasks]
+test = "pytest tests/"
+get-data = "python scripts/download_test_data.py"
