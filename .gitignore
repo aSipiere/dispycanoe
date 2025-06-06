@@ -273,3 +273,5 @@ spark-warehouse/
 
 
 # End of https://www.toptal.com/developers/gitignore/api/spark,python
+.vscode
+artifacts
